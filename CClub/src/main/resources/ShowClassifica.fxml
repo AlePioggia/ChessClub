@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="685.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.it.unibo.bd.db.controller.show.ShowClassificaController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="356.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="cf" prefWidth="122.0" text="CF" />
+          <TableColumn fx:id="nome" prefWidth="133.0" text="Nome" />
+            <TableColumn fx:id="cognome" prefWidth="122.0" text="Cognome" />
+            <TableColumn fx:id="elo" prefWidth="88.0" text="elo" />
+            <TableColumn fx:id="punteggio" prefWidth="109.0" text="Punteggio" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="26.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#goBackOnMouseClicked" text="&lt;-" />
+      <CheckBox fx:id="show" layoutX="498.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#showOnMouseClicked" text="show">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="copy" layoutX="363.0" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#copyToClipboardOnMouseClicked" text="copy to clipboard" />
+      <DatePicker fx:id="dataTorneo" layoutX="576.0" layoutY="77.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="576.0" layoutY="49.0" text="data" />
+   </children>
+</AnchorPane>

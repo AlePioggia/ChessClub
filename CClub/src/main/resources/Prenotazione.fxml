@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="abbonamentoData" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="818.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.it.unibo.bd.db.controller.PrenotazioneController">
+   <children>
+      <Text fill="#f50505" layoutX="184.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMPORTANTE : I campi contrassegnati con * sono obbligatori." />
+      <Text fill="#f5f0f0" layoutX="98.0" layoutY="51.0" stroke="#699fc6" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="12.0" text="SCACCHISTA">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#f2f2f2" layoutX="448.0" layoutY="51.0" stroke="#6ca6d0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="12.0" text="ATTIVITÀ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button id="scacchistaInsertButton" fx:id="valuesButton" layoutX="34.0" layoutY="423.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#insertValues" prefHeight="39.0" prefWidth="161.0" text="INSERISCI I VALORI" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button id="scacchistaHomeButton" fx:id="HomePageButton" layoutX="276.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#goToHomepage" prefHeight="39.0" prefWidth="117.0" text="HOMEPAGE" />
+      <Button fx:id="elencoScacchisti" layoutX="69.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#elencoScacchistiOnMouseClicked" text="APRI ELENCO SCACCHISTI" />
+      <Text layoutX="214.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="543.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <CheckBox fx:id="insertCheckBox" layoutX="78.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#insertValuesOnMouseClicked" text="INSERIMENTO" />
+      <CheckBox fx:id="deleteCheckBox" layoutX="78.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#deleteOnMouseClicked" text="CANCELLAZIONE" />
+      <Text fill="#f5f0f0" layoutX="83.0" layoutY="235.0" stroke="#699fc6" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="12.0" text="PAGAMENTO">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Label layoutX="69.0" layoutY="262.0" text="Codice Pagamento" />
+      <Label layoutX="69.0" layoutY="289.0" text="Importo" />
+      <Label layoutX="69.0" layoutY="320.0" text="Data pagamento" />
+      <Label layoutX="69.0" layoutY="351.0" text="Codice Richiesta" />
+      <TextField fx:id="codicePagamento" layoutX="185.0" layoutY="258.0" />
+      <TextField fx:id="importo" layoutX="185.0" layoutY="285.0" />
+      <DatePicker fx:id="dataPagamento" layoutX="184.0" layoutY="316.0" />
+      <TextField fx:id="codiceRichiesta" layoutX="185.0" layoutY="347.0" />
+      <Text layoutX="117.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N.B :  Il pagamento andrà inserito(obbligatoriamente) solo se si sceglie lezione o seminario." />
+      <Button fx:id="activities" layoutX="480.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#goBackToActivities" text="TORNA AD ATTIVITÀ" />
+      <TextField fx:id="cf" layoutX="72.0" layoutY="78.0" />
+      <ComboBox fx:id="comboBox" layoutX="413.0" layoutY="78.0" onMouseClicked="#comboBoxOnMouseClicked" prefWidth="150.0" />
+      <Label layoutX="413.0" layoutY="142.0" text="Data attivita" />
+      <DatePicker fx:id="dataAttivita" layoutX="488.0" layoutY="138.0" />
+      <Label layoutX="28.0" layoutY="82.0" text="c.fiscale" />
+      <Button fx:id="orariButton" layoutX="509.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#showOrariDisponibili" text="Orari disponibili" />
+   </children>
+</AnchorPane>

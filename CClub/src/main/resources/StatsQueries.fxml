@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="885.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.it.unibo.bd.db.controller.StatsQueriesController">
+   <children>
+      <Text fill="#ee380a" layoutX="287.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SONDAGGI STATISTICI">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dal menù sarà possibile selezionare e lanciare una delle 3 queries:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#5d2bd6" layoutX="54.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="query1 aka ragazzini e tornei">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Individuare gli scacchisti nati dopo il 2000, che hanno partecipato ad almeno un torneo dal periodo che va dal 1° settembre fino al">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20 dicembre dell'anno 2021. Inoltre il loro nome deve : o iniziare per L, o per F oppure finire con A.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#5d2bd6" layoutX="54.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="query2 aka percentuale paganti su totale scacchisti">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mostrare in percentuale il rapporto fra il numero di scacchisti che hanno effettuato almeno un pagamento nei confronti del">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mostrare per ogni scacchista : cf, nome, cognome, il totale dei versamenti effettuati e l'importo totale speso.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#5d2bd6" layoutX="54.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="query3 aka resoconto ">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="totale degli scacchisti.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Andranno selezionati solo coloro che hanno effettuato almeno un versamento, ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="inoltre sarà necessario che il totale speso sia &gt; media(Importo + 10).">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="queryExecution" layoutX="513.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#queryExecutionOnMouseClicked" text="esecuzione query" />
+      <Button fx:id="HomePage" layoutX="372.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#HomePageOnMouseClicked" text="HomePage" />
+      <ComboBox fx:id="comboBox" layoutX="335.0" layoutY="449.0" onMouseClicked="#choiceBoxOnMouseClicked" prefWidth="150.0" />
+      <Text fill="#5d2bd6" layoutX="54.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="query4 aka partecipazioni">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Determinazione del giocatore con il maggior numero di prenotazioni di attività">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#5d2bd6" layoutX="54.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="query5 aka best player">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualizzazione del giocatore più abile del circolo(in base all'elo)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="abbonamentoData" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="818.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.it.unibo.bd.db.controller.LezioneController">
+   <children>
+      <Text layoutX="349.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="#f5f0f0" layoutX="98.0" layoutY="51.0" stroke="#699fc6" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="12.0" text="LEZIONE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#f2f2f2" layoutX="448.0" layoutY="51.0" stroke="#6ca6d0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="12.0" text="DOCENTE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Label layoutX="31.0" layoutY="92.0" text="Data attività">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Label layoutX="30.0" layoutY="119.0" text="Orario Inizio">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Label layoutX="30.0" layoutY="144.0" text="Orario Fine">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Label layoutX="31.0" layoutY="167.0" text="Argomento Lezione">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Label id="abbonamentoCodAbbonamento" layoutX="409.0" layoutY="96.0" text="CF">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Label id="abbonamentoStartDate" layoutX="409.0" layoutY="123.0" text="Nome">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Button id="lezioneInsertButton" fx:id="insertValues" layoutX="34.0" layoutY="423.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#insertValuesOnMouseClicked" prefHeight="39.0" prefWidth="161.0" text="INSERISCI I VALORI" wrapText="true">
+         <font>
+            <Font name="Colonna MT" size="14.0" />
+         </font>
+      </Button>
+      <Button id="lezioneHomepage" fx:id="homePage" layoutX="254.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#goBackToHomePage" prefHeight="39.0" prefWidth="117.0" text="HOMEPAGE" />
+      <Label id="abbonamentoStartDate" layoutX="409.0" layoutY="149.0" text="Cognome">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label id="abbonamentoStartDate" layoutX="409.0" layoutY="174.0" text="Data di nascita">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Text fill="#f2f2f2" layoutX="407.0" layoutY="256.0" stroke="#6ca6d0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="12.0" text="PROVA DI AUTOVALUTAZIONE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Label layoutX="409.0" layoutY="284.0" text="Codice Prova">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Label layoutX="409.0" layoutY="308.0" text="Difficoltà">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Label layoutX="409.0" layoutY="332.0" text="Numero di quesiti">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Label>
+      <Text layoutX="34.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="195.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="560.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#f50606" layoutX="45.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMPORTANTE : I campi contrassegnati con * sono obbligatori nel caso dell'inserimento." />
+      <Button fx:id="showLessons" layoutX="632.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#showLessonsOnMouseClicked" text="MOSTRA LEZIONI" />
+      <CheckBox fx:id="insertCheckBox" layoutX="30.0" layoutY="194.0" mnemonicParsing="false" text="INSERIMENTO">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="deleteCheckBox" layoutX="31.0" layoutY="229.0" mnemonicParsing="false" text="ELIMINAZIONE">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></CheckBox>
+      <Text fill="#f50606" layoutX="45.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="se si seleziona la cancellazione è necessario inserire SOLO la data dell'attività da eliminare" />
+      <TextField fx:id="orarioInizio" layoutX="147.0" layoutY="106.0" />
+      <TextField fx:id="orarioFine" layoutX="147.0" layoutY="131.0" />
+      <TextField fx:id="argomentoLezione" layoutX="155.0" layoutY="155.0" />
+      <TextField fx:id="cf" layoutX="522.0" layoutY="86.0" />
+      <TextField fx:id="name" layoutX="524.0" layoutY="112.0" />
+      <TextField fx:id="surname" layoutX="524.0" layoutY="137.0" />
+      <TextField fx:id="codiceProva" layoutX="524.0" layoutY="274.0" />
+      <TextField fx:id="difficulty" layoutX="524.0" layoutY="295.0" />
+      <TextField fx:id="numeroQuesiti" layoutX="524.0" layoutY="327.0" />
+      <Button fx:id="activitiesHome" layoutX="443.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#goBackToActivitiesHomePage" text="TORNA AD ATTIVITÀ" />
+      <DatePicker fx:id="birthDate" layoutX="524.0" layoutY="168.0" />
+      <DatePicker fx:id="dataAttivita" layoutX="141.0" layoutY="79.0" />
+   </children>
+</AnchorPane>

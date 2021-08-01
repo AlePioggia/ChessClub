@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.it.unibo.bd.db.controller.show.ShowDatesFromCompetizioneController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="356.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="lezioni" prefWidth="135.0" text="Lezioni" />
+          <TableColumn fx:id="seminari" prefWidth="152.0" text="Seminari" />
+            <TableColumn fx:id="tornei" prefWidth="154.0" text="Tornei" />
+            <TableColumn fx:id="competizioni" prefWidth="171.0" text="C.F.Circoli" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="26.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#goBackOnMouseClicked" text="&lt;-" />
+      <CheckBox fx:id="show" layoutX="498.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#showOnMouseClicked" text="show">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="copy" layoutX="363.0" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#copyToClipboardOnMouseClicked" text="copy to clipboard" />
+   </children>
+</AnchorPane>
